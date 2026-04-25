@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<head>
+  <title>Jack May - Overview</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="font-mono">
+    <div class="text-center text-4xl py-4 bg-black text-white font-bold">
+      <p>Jack May - Overview</p>
+    </div>
+
+    <!-- Navbar -->
+    <div class="py-4 px-4 bg-red-700 text-white font-bold text-2xl">
+      <ul class="flex space-x-8 justify-center">
+        <a href="./resume.html"<li>RESUME</li></a>
+        <a href="./about-me.html"><li>ABOUT ME</li></a>
+      </ul>
+    </div>
+
+    <div class="px-4 pb-4 bg-red-700 text-white text-xs">
+      <ul class="flex space-x-8 justify-center">
+        <a href="https://www.linkedin.com/in/jack-may-50154021b/"><li>LinkedIn</li></a>
+        <a href="https://github.com/jackmay942149"><li>Github</li></a>
+        <li>jackmay942149@gmail.com</li>
+      </ul>
+    </div>
+
+    <!-- Filters -->
+    <div id="tag-filter" class="flex flex-wrap justify-center gap-2 my-6">
+      <button class="tag-btn bg-gray-300 hover:bg-gray-400 px-3 py-1 rounded" data-tag="all">All</button>
+      <button class="tag-btn bg-gray-300 hover:bg-gray-400 px-3 py-1 rounded" data-tag="games">Games</button>
+      <button class="tag-btn bg-gray-300 hover:bg-gray-400 px-3 py-1 rounded" data-tag="tools">Tools</button>
+      <button class="tag-btn bg-gray-300 hover:bg-gray-400 px-3 py-1 rounded" data-tag="graphics">Graphics</button>
+      <button class="tag-btn bg-gray-300 hover:bg-gray-400 px-3 py-1 rounded" data-tag="vulkan">Vulkan</button>
+      <button class="tag-btn bg-gray-300 hover:bg-gray-400 px-3 py-1 rounded" data-tag="vr">VR</button>
+      <button class="tag-btn bg-gray-300 hover:bg-gray-400 px-3 py-1 rounded" data-tag="mobile">Mobile</button>
+      <button class="tag-btn bg-gray-300 hover:bg-gray-400 px-3 py-1 rounded" data-tag="cpp">C++</button>
+      <button class="tag-btn bg-gray-300 hover:bg-gray-400 px-3 py-1 rounded" data-tag="odin">Odin</button>
+      <button class="tag-btn bg-gray-300 hover:bg-gray-400 px-3 py-1 rounded" data-tag="go">Go</button>
+      <button class="tag-btn bg-gray-300 hover:bg-gray-400 px-3 py-1 rounded" data-tag="csharp">C#</button>
+      <button class="tag-btn bg-gray-300 hover:bg-gray-400 px-3 py-1 rounded" data-tag="unreal">Unreal</button>
+      <button class="tag-btn bg-gray-300 hover:bg-gray-400 px-3 py-1 rounded" data-tag="unity">Unity</button>
+    </div>
+
+    <!-- Project - Oh My Gourd VR -->
+    <div data-tags="games vr odin vulkan" class="project-card max-w-4xl mx-auto my-8 border border-gray-300 rounded-lg shadow p-4">
+      <h2 class="text-2xl font-bold mb-4">Oh My Gourd VR</h2>
+      <div class="flex flex-wrap gap-2 text-xs text-white my-2">
+        <span class="bg-gray-600 px-2 py-1 rounded">Games</span>
+        <span class="bg-gray-600 px-2 py-1 rounded">VR</span>
+        <span class="bg-gray-600 px-2 py-1 rounded">Odin</span>
+        <span class="bg-gray-600 px-2 py-1 rounded">Vulkan</span>
+      </div>
+
+      <div class="relative mb-4">
+        <div class="media-container aspect-video bg-black rounded overflow-hidden"></div>
+        <div class="absolute inset-y-0 left-0 flex items-center">
+          <button class="prev-btn text-white bg-red-700 bg-opacity-50 px-6 py-3 hover:bg-opacity-75">&#8592;</button>
+        </div>
+        <div class="absolute inset-y-0 right-0 flex items-center">
+          <button class="next-btn text-white bg-red-700 bg-opacity-50 px-6 py-3 hover:bg-opacity-75">&#8594;</button>
+        </div>
+      </div>
+
+      <div class="media-data hidden">
+        <div data-type="image" data-src="./images/oh-my-gourd-1.png"></div>
+        <div data-type="video" data-src="https://www.youtube.com/embed/obt3z5WHVws"></div>
+      </div>
+
+      <p class="text-gray-700 mb-4">
+        <strong>Team Size: 3</strong>
+      </p>
+
+      <p class="text-gray-700 mb-4">
+        Oh My Gourd VR is a game jam vr experience made using odin, vulkan and openxr. This was a 4 week project with 3 weeks dedicated to rendering and vr and 1 week on the game once we were given the prompt "Chain Reaction".</p>
+
+      <a href="./project-pages/oh-my-gourd.html"><button class="bg-red-700 text-white px-4 py-2 rounded hover:bg-red-600">More Info</button></a>
+    </div>
+
+    <!-- Project - Software Raytracer and PPM-BMP Converter-->
+    <div data-tags="graphics tools cpp" class="project-card max-w-4xl mx-auto my-8 border border-gray-300 rounded-lg shadow p-4">
+      <h2 class="text-2xl font-bold mb-4">Software Raytracer and PPm-BMP Converter</h2>
+      <div class="flex flex-wrap gap-2 text-xs text-white my-2">
+        <span class="bg-gray-600 px-2 py-1 rounded">Graphics</span>
+        <span class="bg-gray-600 px-2 py-1 rounded">Tools</span>
+        <span class="bg-gray-600 px-2 py-1 rounded">C++</span>
+      </div>
+
+      <div class="relative mb-4">
+        <div class="media-container aspect-video bg-black rounded overflow-hidden"></div>
+        <div class="absolute inset-y-0 left-0 flex items-center">
+          <button class="prev-btn text-white bg-red-700 bg-opacity-50 px-6 py-3 hover:bg-opacity-75">&#8592;</button>
+        </div>
+        <div class="absolute inset-y-0 right-0 flex items-center">
+          <button class="next-btn text-white bg-red-700 bg-opacity-50 px-6 py-3 hover:bg-opacity-75">&#8594;</button>
+        </div>
+      </div>
+
+      <div class="media-data hidden">
+        <div data-type="image" data-src="./images/raytracer-ppm.bmp"></div>
+      </div>
+
+      <p class="text-gray-700 mb-4">
+        <strong>Team Size: 1</strong>
+      </p>
+
+      <p class="text-gray-700 mb-4">
+        This raytracer was developed alongside reading the infamous Raytracing in One Weekend series. It was completed as suggested in one weekend, and as an extension I made an additional small program to convert the .PPM files utilised in the book to .BMP which are easily shared online as shown above.
+      </p>
+
+      <a href="https://github.com/jackmay942149/cpp-raytracer"><button class="bg-red-700 text-white px-4 py-2 rounded hover:bg-red-600">More Info</button></a>
+    </div>
+
+    <!-- Project 1 - Materchef VR -->
+    <div data-tags="games vr csharp unity" class="project-card max-w-4xl mx-auto my-8 border border-gray-300 rounded-lg shadow p-4">
+      <h2 class="text-2xl font-bold mb-4">Masterchef VR</h2>
+      <div class="flex flex-wrap gap-2 text-xs text-white my-2">
+        <span class="bg-gray-600 px-2 py-1 rounded">Games</span>
+        <span class="bg-gray-600 px-2 py-1 rounded">VR</span>
+        <span class="bg-gray-600 px-2 py-1 rounded">C#</span>
+        <span class="bg-gray-600 px-2 py-1 rounded">Unity</span>
+      </div>
+
+      <div class="relative mb-4">
+        <div class="media-container aspect-video bg-black rounded overflow-hidden"></div>
+        <div class="absolute inset-y-0 left-0 flex items-center">
+          <button class="prev-btn text-white bg-red-700 bg-opacity-50 px-6 py-3 hover:bg-opacity-75">&#8592;</button>
+        </div>
+        <div class="absolute inset-y-0 right-0 flex items-center">
+          <button class="next-btn text-white bg-red-700 bg-opacity-50 px-6 py-3 hover:bg-opacity-75">&#8594;</button>
+        </div>
+      </div>
+
+      <div class="media-data hidden">
+        <div data-type="video" data-src="https://www.youtube.com/embed/qaDZJxztuf0?si=1z86-KIZ4olweVJD"></div>
+        <div data-type="image" data-src="./images/masterchef-1.png"></div>
+        <div data-type="image" data-src="./images/masterchef-2.png"></div>
+        <div data-type="image" data-src="./images/masterchef-3.png"></div>
+      </div>
+
+      <p class="text-gray-700 mb-4">
+        <strong>Team Size: 4 + 5</strong>
+      </p>
+
+      <p class="text-gray-700 mb-4">
+        Masterchef VR is a university project in collaboration with Banijay Entertainment and Breda University, in the Netherlands (the + 5). We made a VR experience to emulate what it would be like to be a contestant in Masterchef, with challenges only virtual reality could provide. This is one of my favourite projects working with Banijay on a very visible IP.
+      </p>
+
+      <a href="./project-pages/masterchef.html"><button class="bg-red-700 text-white px-4 py-2 rounded hover:bg-red-600">More Info</button></a>
+    </div>
+    
+    <!-- Project 2 - Rock Bottom -->
+    <div data-tags="games mobile cpp unreal" class="project-card max-w-4xl mx-auto my-8 border border-gray-300 rounded-lg shadow p-4">
+      <h2 class="text-2xl font-bold mb-4">Rock Bottom</h2>
+      <div class="flex flex-wrap gap-2 text-xs text-white my-2">
+        <span class="bg-gray-600 px-2 py-1 rounded">Games</span>
+        <span class="bg-gray-600 px-2 py-1 rounded">Mobile</span>
+        <span class="bg-gray-600 px-2 py-1 rounded">C++</span>
+        <span class="bg-gray-600 px-2 py-1 rounded">Unreal</span>
+      </div>
+
+      <div class="relative mb-4">
+        <div class="media-container aspect-video bg-black rounded overflow-hidden"></div>
+        <div class="absolute inset-y-0 left-0 flex items-center">
+          <button class="prev-btn text-white bg-red-700 bg-opacity-50 px-6 py-3 hover:bg-opacity-75">&#8592;</button>
+        </div>
+        <div class="absolute inset-y-0 right-0 flex items-center">
+          <button class="next-btn text-white bg-red-700 bg-opacity-50 px-6 py-3 hover:bg-opacity-75">&#8594;</button>
+        </div>
+      </div>
+
+      <div class="media-data hidden">
+        <div data-type="video" data-src="https://www.youtube.com/embed/W2Qpqp6iyR4?si=gQAgfv5dIKgEdARV"></div>
+        <div data-type="image" data-src="./images/rockbottom-1.png"></div>
+        <div data-type="image" data-src="./images/rockbottom-2.png"></div>
+      </div>
+
+      <p class="text-gray-700 mb-4">
+        <strong>Team Size: 4</strong>
+      </p>
+
+      <p class="text-gray-700 mb-4">
+        Rock Bottom is my first publically released game, available on the Android Play Store. Rock Bottom is a 3D Educational Puzzle game designed to be taken to university classrooms to assist in teachng AMD prevention methods. This is an ongoing project with the International Network for Acid Prevention.
+      </p>
+
+      <a href="./project-pages/rock-bottom.html"><button class="bg-red-700 text-white px-4 py-2 rounded hover:bg-red-600">More Info</button></a>
+    </div>
+
+    <!-- Project 3 - Eco Explorations -->
+    <div data-tags="games vr csharp unity" class="project-card max-w-4xl mx-auto my-8 border border-gray-300 rounded-lg shadow p-4">
+      <h2 class="text-2xl font-bold mb-4">Eco Explorations</h2>
+      <div class="flex flex-wrap gap-2 text-xs text-white my-2">
+        <span class="bg-gray-600 px-2 py-1 rounded">Games</span>
+        <span class="bg-gray-600 px-2 py-1 rounded">VR</span>
+        <span class="bg-gray-600 px-2 py-1 rounded">C#</span>
+        <span class="bg-gray-600 px-2 py-1 rounded">Unity</span>
+      </div>
+
+      <div class="relative mb-4">
+        <div class="media-container aspect-video bg-black rounded overflow-hidden"></div>
+        <div class="absolute inset-y-0 left-0 flex items-center">
+          <button class="prev-btn text-white bg-red-700 bg-opacity-50 px-6 py-3 hover:bg-opacity-75">&#8592;</button>
+        </div>
+        <div class="absolute inset-y-0 right-0 flex items-center">
+          <button class="next-btn text-white bg-red-700 bg-opacity-50 px-6 py-3 hover:bg-opacity-75">&#8594;</button>
+        </div>
+      </div>
+
+      <div class="media-data hidden">
+        <div data-type="video" data-src="https://www.youtube.com/embed/zAGYbf3l1WM"></div>
+        <div data-type="image" data-src="./images/eco-1.png"></div>
+        <div data-type="image" data-src="./images/eco-2.png"></div>
+        <div data-type="image" data-src="./images/eco-3.png"></div>
+      </div>
+
+      <p class="text-gray-700 mb-4">
+        <strong>Team Size: 6 + ?</strong>
+      </p>
+
+      <p class="text-gray-700 mb-4">
+        Eco Explorations is a QUT Faculty of Science project leveraging the use of VR, education and community engagement to spark interest in emerging STEM talent. I worked with a team on creating the Daintree module which was a VR experience on protecting the National Forest from invasive plant species.
+      </p>
+      <a href="./project-pages/eco.html"><button class="bg-red-700 text-white px-4 py-2 rounded hover:bg-red-600">More Info</button></a>
+    </div>
+
+</body>
+
+<!-- Slideshow Elements -->
+<script>
+  document.querySelectorAll('.project-card').forEach(card => {
+    const container = card.querySelector('.media-container');
+    const mediaItems = Array.from(card.querySelectorAll('.media-data > div')).map(el => ({
+      type: el.dataset.type,
+      src: el.dataset.src
+    }));
+
+    let index = 0;
+
+    const render = () => {
+      container.innerHTML = '';
+
+      const media = mediaItems[index];
+
+      if (media.type === 'image') {
+        const img = document.createElement('img');
+        img.src = media.src;
+        img.alt = '';
+        img.className = 'w-full h-full object-cover';
+        container.appendChild(img);
+      } else if (media.type === 'video') {
+        const iframe = document.createElement('iframe');
+        iframe.src = media.src;
+        iframe.className = 'w-full h-full';
+        iframe.frameBorder = '0';
+        iframe.allowFullscreen = true;
+        container.appendChild(iframe);
+      }
+    };
+
+    card.querySelector('.prev-btn').addEventListener('click', () => {
+      index = (index - 1 + mediaItems.length) % mediaItems.length;
+      render();
+    });
+
+    card.querySelector('.next-btn').addEventListener('click', () => {
+      index = (index + 1) % mediaItems.length;
+      render();
+    });
+
+    render(); 
+  });
+</script>
+
+<!-- Filter functionality -->
+<script>
+  const tagButtons = document.querySelectorAll('.tag-btn');
+  const projectCards = document.querySelectorAll('.project-card');
+
+  tagButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const selected = btn.dataset.tag;
+
+      projectCards.forEach(card => {
+        const tags = card.dataset.tags.split(' ');
+        const show = selected === 'all' || tags.includes(selected);
+        card.style.display = show ? '' : 'none';
+      });
+
+      tagButtons.forEach(b => b.classList.remove('bg-blue-500', 'text-white'));
+      btn.classList.add('bg-blue-500', 'text-white');
+    });
+  });
+</script>
